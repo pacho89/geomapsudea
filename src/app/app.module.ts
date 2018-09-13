@@ -3,6 +3,7 @@ import { NgModule, ApplicationRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { AgmOverlays } from "agm-overlays";
 
 import { AgmCoreModule } from '@agm/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +15,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
   imports: [
     BrowserModule,
     CommonModule,
+    AgmOverlays,
     FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAUreLS2iYwg0xdZTTnufdfmaEdrPaB5t0'

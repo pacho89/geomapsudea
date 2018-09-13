@@ -25,8 +25,16 @@
       </button>
       <span>GEOMAPSUDEA</span>
     </mat-toolbar>
-    <agm-map [zoom]="16.5" [latitude]="lat" [longitude]="lng">
-      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+
+
+    <agm-map [zoom]="16.5" [latitude]="lat" [longitude]="lng" [scrollwheel]="false">
+      <agm-overlay [latitude]="6.271390" [longitude]="-75.570665"> 
+        <!-- blue html square -->
+        <div class="image"></div>
+      </agm-overlay>
+      <agm-marker [latitude]="lat" [longitude]="lng">
+        <agm-info-window>UdeA</agm-info-window>
+      </agm-marker>
     </agm-map>
   </mat-sidenav-content>
 </mat-sidenav-container>

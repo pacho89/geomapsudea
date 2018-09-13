@@ -1,17 +1,32 @@
 .sidenav-container {
   height: 100%;
+  
 }
 
 .sidenav {
+  
   width: 200px;
 }
 
 .mat-toolbar.mat-primary {
+  background: #078986;
+  color: #fff;
   position: sticky;
   top: 0;
 }
 
-agm-map {
-  height:567px;
 
+agm-map {
+  height:600px;
+
+}
+
+.image{
+  
+  height:498px; 
+  background-repeat: no-repeat;
+  background-size:cover;
+  width:481px;
+  background-image:url('/Imagenes/transparente.jpg');
+  background-position:61.5% 56.5%;
 }
