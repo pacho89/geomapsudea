@@ -16,17 +16,15 @@
 }
 
 
-agm-map {
-  height:600px;
-
-}
 
 .image{
+
   
-  height:498px; 
+  width: 847px;
+  height:783px; 
   background-repeat: no-repeat;
   background-size:cover;
-  width:481px;
-  background-image:url('/Imagenes/transparente.jpg');
-  background-position:61.5% 56.5%;
+
+  background-image:url('/Imagenes/UdeA-Ciudad_Universitaria-Medellin.svg'),none; 
+  background-position:0% 0%;
 }
