@@ -11,10 +11,14 @@ import { NavUdeaComponent } from './nav-udea/nav-udea.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { AppRoutingModule } from './/app-routing.module';
+import { NgxImageZoomModule } from 'ngx-image-zoom';
+import { PinchZoomModule } from 'ngx-pinch-zoom';
 
 @NgModule({
   imports: [
     BrowserModule,
+    NgxImageZoomModule.forRoot(),
+    PinchZoomModule,
     CommonModule,
     AgmOverlays,
     FormsModule,
