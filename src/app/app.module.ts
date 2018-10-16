@@ -13,6 +13,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { AppRoutingModule } from './/app-routing.module';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
 import { PinchZoomModule } from 'ngx-pinch-zoom';
+import { Bloque20Component } from './bloque20/bloque20.component';
+
 
 @NgModule({
   imports: [
@@ -35,7 +37,7 @@ import { PinchZoomModule } from 'ngx-pinch-zoom';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, NavUdeaComponent ],
+  declarations: [ AppComponent, NavUdeaComponent, Bloque20Component ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}
