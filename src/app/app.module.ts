@@ -14,6 +14,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
 import { PinchZoomModule } from 'ngx-pinch-zoom';
 import { Bloque20Component } from './bloque20/bloque20.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdModalBasic } from './bloque20/modal-basic';
 
 
 @NgModule({
@@ -22,6 +24,7 @@ import { Bloque20Component } from './bloque20/bloque20.component';
     NgxImageZoomModule.forRoot(),
     PinchZoomModule,
     CommonModule,
+    NgbModule,
     AgmOverlays,
     FormsModule,
     AgmCoreModule.forRoot({
@@ -37,7 +40,7 @@ import { Bloque20Component } from './bloque20/bloque20.component';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, NavUdeaComponent, Bloque20Component ],
+  declarations: [ AppComponent, NavUdeaComponent, Bloque20Component, NgbdModalBasic ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}

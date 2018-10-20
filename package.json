@@ -23,10 +23,12 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^3.3.1",
     "core-js": "^2.5.4",
     "marker": "^0.1.2",
     "ngx-image-zoom": "^0.3.1",
     "ngx-pinch-zoom": "^1.2.0",
+    "ngx-smart-modal": "^7.1.0",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },
