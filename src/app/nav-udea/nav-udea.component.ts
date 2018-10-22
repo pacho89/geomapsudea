@@ -29,13 +29,21 @@ export class NavUdeaComponent {
     });
   }
 
-  open2(content:any) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title2'}).result.then((result) => {
+  open2(content2:any) {
+    this.modalService.open(content2, {ariaLabelledBy: 'modal-basic-title2'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
   }
+  open3(content3:any) {
+    this.modalService.open(content3, {ariaLabelledBy: 'modal-basic-title3'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
 
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
@@ -52,7 +60,7 @@ export class NavUdeaComponent {
     lat: number = 6.2676;
     lng: number = -75.569;
     zoom: 18;
-    image:'/Imagenes/transparente.jp';
+    //image:'/Imagenes/transparente.jp';
 
 
 

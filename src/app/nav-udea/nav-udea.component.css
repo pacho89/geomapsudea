@@ -28,3 +28,7 @@
   background-image:url('/Imagenes/UdeA-Ciudad_Universitaria-Medellin.svg'),none; 
   background-position:0% 0%;
 }
+
+agm-map {
+  height: 300px;
+}
