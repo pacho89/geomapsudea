@@ -14,7 +14,7 @@
           <img src='/Imagenes/bloque20.JPG'>
           
         </div>
-        <label for="dateOfBirth">Bloque 20, perteneciente a la acultad de ingenieria, con acceso a las oficinas de ingenieria quimica, electronica.</label>
+        <label for="dateOfBirth">Bloque 20, perteneciente a la facultad de ingenieria, con acceso a las oficinas de ingenieria quimica, electronica.</label>
       </div>
     </form>
   </div>
@@ -22,6 +22,31 @@
     <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
   </div>
 </ng-template>
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title2">Bloque 21</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          
+          <div class="input-group">
+            <!-- Aqui va la imagen del bloque 20 -->
+            <img src='/Imagenes/bloque21.JPG'>
+            
+          </div>
+          <label for="dateOfBirth">Bloque 21, perteneciente a la facultad de ingenieria, con acceso a las oficinas de ingenieria de sistemas, industrial.</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    </div>
+  </ng-template>
+
 
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav
@@ -33,9 +58,9 @@
     [opened]="!(isHandset$ | async)">
     <mat-toolbar color="warn">Menu</mat-toolbar>
     <mat-nav-list>
-      <a (click)="open(content)" mat-list-item>Bloque 20</a>
+      <a (click)="open(content)" mat-list-item routerLink="bloque20">Bloque 20</a>
       
-      <a mat-list-item href="#">Bloque 21</a>
+      <a (click)="open2(content)" mat-list-item href="#">Bloque 21</a>
       <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
   </mat-sidenav>
@@ -55,14 +80,13 @@
   
 
     <div>
-   
-    <pinch-zoom [double-tap]="true">
-      <img src='/Imagenes/UdeA-Ciudad_Universitaria-Medellin20.svg'  style="width: 80%">
-      <img src='/Imagenes/UdeA-Ciudad_Universitaria-Medellin21.svg'  style="width: 128.7%">
-    </pinch-zoom>
-    <router-outlet></router-outlet>  
-    
-  </div>  
+      <router-outlet></router-outlet>
+      <pinch-zoom [double-tap]="true">
+        <img src='/Imagenes/UdeA-Ciudad_Universitaria-Medellin.svg'  style="width: 100%">
+        <!--<img src='/Imagenes/UdeA-Ciudad_Universitaria-Medellin21.svg'  style="width: 128.7%">-->
+      </pinch-zoom>
+      
+    </div>  
   
     <!--<div>
       <img src='/Imagenes/UdeA-Ciudad_Universitaria-Medellin.svg'  style="width: 100%"  >
