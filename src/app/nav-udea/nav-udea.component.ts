@@ -16,12 +16,28 @@ var historicalOverlay;
 })
 export class NavUdeaComponent {
   
+
+    title: string = 'GeoMapsUdeA';
+    //lat: number = 6.2676;
+    //lng: number = -75.569;
+    zoom: 18;
+    lat:any;
+    lng:any;
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
     );
     closeResult: string;  
-  constructor(private breakpointObserver: BreakpointObserver, private modalService: NgbModal) {}
+  constructor(private breakpointObserver: BreakpointObserver, private modalService: NgbModal) {
+    if (navigator)
+    {
+    navigator.geolocation.getCurrentPosition( pos => {
+        this.lng = +pos.coords.longitude;
+        this.lat = +pos.coords.latitude;
+      });
+    }
+  }
  
   open(content:any) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
@@ -57,11 +73,7 @@ export class NavUdeaComponent {
     }
   }
 
-   title: string = 'GeoMapsUdeA';
-  
-    lat: number = 6.2676;
-    lng: number = -75.569;
-    zoom: 18;
+   
     //image:'/Imagenes/transparente.jp';
 
 

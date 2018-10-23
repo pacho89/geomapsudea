@@ -62,11 +62,13 @@
                   <div>
                     <!-- Aqui va la imagen del bloque 20 -->
                     <agm-map  [zoom]="16" [latitude]="lat" [longitude]="lng">
-                        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                        <agm-marker [latitude]="lat" [longitude]="lng">
+                          <agm-info-window>Usted esta aqui.</agm-info-window>
+                        </agm-marker>
                       </agm-map>
                     
                   </div>
-                  <label for="dateOfBirth">Bloque 21, perteneciente a la facultad de ingenieria, con acceso a las oficinas de ingenieria de sistemas, industrial.</label>
+                  <label>Usted esta aqui.</label>
                 </div>
               </form>
             </div>
