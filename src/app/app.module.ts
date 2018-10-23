@@ -16,6 +16,7 @@ import { PinchZoomModule } from 'ngx-pinch-zoom';
 import { Bloque20Component } from './bloque20/bloque20.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdModalBasic } from './bloque20/modal-basic';
+import { PisoComponent } from './piso/piso.component';
 
 
 @NgModule({
@@ -40,7 +41,7 @@ import { NgbdModalBasic } from './bloque20/modal-basic';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, NavUdeaComponent, Bloque20Component, NgbdModalBasic ],
+  declarations: [ AppComponent, NavUdeaComponent, Bloque20Component, NgbdModalBasic, PisoComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}

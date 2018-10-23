@@ -18,8 +18,8 @@ export class NavUdeaComponent {
   
 
     title: string = 'GeoMapsUdeA';
-    //lat: number = 6.2676;
-    //lng: number = -75.569;
+    lat1: number = 6.2676;
+    lng1: number = -75.569;
     zoom: 18;
     lat:any;
     lng:any;
