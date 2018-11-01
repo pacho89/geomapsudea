@@ -1,16 +1,17 @@
 .sidenav-container {
   height: 100%;
   
+  
 }
 
 .sidenav {
-  
+  background: #f6f8f7;
   width: 200px;
 }
 
-.mat-toolbar.mat-primary {
-  background: #078986;
-  color: #fff;
+.mat-toolbar {
+  background: #078939;
+  color: rgb(12, 12, 12);
   position: sticky;
   top: 0;
 }
@@ -50,7 +51,7 @@ agm-map {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

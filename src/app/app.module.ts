@@ -17,6 +17,7 @@ import { Bloque20Component } from './bloque20/bloque20.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdModalBasic } from './bloque20/modal-basic';
 import { PisoComponent } from './piso/piso.component';
+import { MapaComponent } from './mapa/mapa.component';
 
 
 @NgModule({
@@ -41,7 +42,7 @@ import { PisoComponent } from './piso/piso.component';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, NavUdeaComponent, Bloque20Component, NgbdModalBasic, PisoComponent ],
+  declarations: [ AppComponent, NavUdeaComponent, Bloque20Component, NgbdModalBasic, PisoComponent, MapaComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}

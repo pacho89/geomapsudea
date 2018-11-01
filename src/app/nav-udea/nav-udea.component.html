@@ -18,9 +18,7 @@
         </div>
       </form>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
-    </div>
+   
   </ng-template>
 
   <ng-template #content2 let-modal>
@@ -43,9 +41,7 @@
             </div>
           </form>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
-        </div>
+        
       </ng-template>
 
       <ng-template #content3 let-modal>
@@ -72,9 +68,7 @@
                 </div>
               </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
-            </div>
+            
           </ng-template>
 
   
@@ -86,7 +80,7 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
-    <mat-toolbar color="warn">Menu</mat-toolbar>
+    <mat-toolbar color="Foreground">Menu</mat-toolbar>
     <mat-nav-list>
         <div class="dropdown">
             <a class="dropbtn" (click)="open(content)" mat-list-item >Bloque 20</a>
@@ -129,11 +123,7 @@
 
     <div>
       <router-outlet></router-outlet>
-      <pinch-zoom [double-tap]="true">
-        <img src='/Imagenes/UdeA-Ciudad_Universitaria-Medellin.svg'  style="width: 100%">
-       <!-- <img src='/Imagenes/UdeA-Ciudad_Universitaria-Medellin21.svg'  style="width: 128.7%">-->
-      </pinch-zoom>
-      
+
     </div>  
   
     <!--<div>

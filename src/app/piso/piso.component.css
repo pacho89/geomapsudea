@@ -1,3 +1,4 @@
-imagen {
-    background-image: url("/Imagenes/bloque20.JPG");
+.imagen {
+    position: absolute;
+    background-image: url('/Imagenes/bloque20.JPG');
 }
