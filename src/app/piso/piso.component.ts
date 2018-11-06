@@ -5,6 +5,7 @@ import { NIVELES } from '../mock-pisos';
   selector: 'app-piso',
   templateUrl: './piso.component.html',
   styleUrls: ['./piso.component.css']
+  
 })
 export class PisoComponent implements OnInit {
   
@@ -17,5 +18,5 @@ export class PisoComponent implements OnInit {
 
   ngOnInit() {
   }
-
+ 
 }
