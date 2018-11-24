@@ -80,7 +80,7 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
-    <mat-toolbar color="Foreground">Menu</mat-toolbar>
+    <mat-toolbar color="Foreground">Geo Maps UdeA</mat-toolbar>
     <mat-nav-list>
         <div class="dropdown">
             <a class="dropbtn" (click)="open(content)" mat-list-item >Bloque 20</a>
@@ -107,11 +107,25 @@
       </div>
     </div>
     
+    
+
+
       <a (click)="open3(content3)" mat-list-item >Georeferencia</a>
+
+
+     
+
     </mat-nav-list>
+
+  
+
   </mat-sidenav>
+
+  
+    
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    
+    <mat-toolbar class="mat-toolbar" color="primary">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -120,7 +134,12 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>GEOMAPSUDEA</span>
+      <div class="search-container">
+          <form >
+            <input type="text" placeholder="Geo Maps UdeA" name="Busqueda">
+            <button ><i class="fa fa-search"></i></button>
+          </form>
+        </div>
     </mat-toolbar>
 
 
