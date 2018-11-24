@@ -18,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdModalBasic } from './bloque20/modal-basic';
 import { PisoComponent } from './piso/piso.component';
 import { MapaComponent } from './mapa/mapa.component';
+import { HttpClientModule }    from '@angular/common/http';
 
 
 @NgModule({
@@ -39,7 +40,9 @@ import { MapaComponent } from './mapa/mapa.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   declarations: [ AppComponent, NavUdeaComponent, Bloque20Component, NgbdModalBasic, PisoComponent, MapaComponent ],

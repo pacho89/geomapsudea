@@ -1,116 +1,155 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">UdeA</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <a class="navbar-brand" href="#">UdeA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Salones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-divider"></div>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Salones
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Laboratorios
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Oficinas
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Baños
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+
+
+            <ul class="heroes"  *ngFor="let item of niveles">
+            
+              
+                <li *ngIf="item.nivel == 21  " >
+                    <div class="dropdown-divider"></div>
+                    <a  (click)="open(content)">{{item.descripcion}}</a>
+                    <ng-template #content let-modal>
+                        <div class="modal-header">
+                          <h4 class="modal-title" id="modal-basic-title">Aulas del 203 al 236</h4>
+                          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-group">
+                              
+                              <div class="input-group">
+                                <img src={{item.url}}  style="width: 100%; height:100%">
+                                
+                              </div>
+                              <label for="dateOfBirth">Corredor correspondiente al segundo piso del bloque 21 donde se encuentran las aulas de clase.</label>
+                            </div>
+                          </form>
+                        </div>
+                       
+                      </ng-template>
+
+
+
+                </li>
+              
+              </ul>
+
+
+
+
+
+           
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Laboratorios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Oficinas
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Baños
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+  <!--
+  <div class = "navContainer">
+          <nav class = "user">
+            <ul>
+              <li><a>
+                  <div class="dropdown">
+                          <a class="dropbtn" mat-list-item >Salones</a>
+                          <div class="dropdown-content">
+                            <a >Salon 1</a>
+                            <a href="#">Salon 1</a>
+                            <a href="#">Salon 1</a>
+                            <a href="#">Salon 1</a>
+                          </div>
+                        </div>
+              </a></li> 
+              <li><a>
+                  <div class="dropdown">
+                          <a class="dropbtn" mat-list-item >Laboratorios</a>
+                          <div class="dropdown-content">
+                            <a >Salon 1</a>
+                            <a href="#">Salon 1</a>
+                            <a href="#">Salon 1</a>
+                            <a href="#">Salon 1</a>
+                          </div>
+                        </div>
+              </a></li>
+              <li><a>
+                  <div class="dropdown">
+                          <a class="dropbtn" mat-list-item >Oficinas</a>
+                          <div class="dropdown-content">
+                            <a >Salon 1</a>
+                            <a href="#">Salon 1</a>
+                            <a href="#">Salon 1</a>
+                            <a href="#">Salon 1</a>
+                          </div>
+                        </div>
+              </a></li>
+              <li><a>
+                  <div class="dropdown">
+                          <a class="dropbtn" mat-list-item >Baños</a>
+                          <div class="dropdown-content">
+                            <a >Salon 1</a>
+                            <a href="#">Salon 1</a>
+                            <a href="#">Salon 1</a>
+                            <a href="#">Salon 1</a>
+                          </div>
+                        </div>
+              </a></li>
+            </ul>
+          </nav>
+          
   </div>
-</nav>
-
-<!--
-<div class = "navContainer">
-        <nav class = "user">
-          <ul>
-            <li><a>
-                <div class="dropdown">
-                        <a class="dropbtn" mat-list-item >Salones</a>
-                        <div class="dropdown-content">
-                          <a >Salon 1</a>
-                          <a href="#">Salon 1</a>
-                          <a href="#">Salon 1</a>
-                          <a href="#">Salon 1</a>
-                        </div>
-                      </div>
-            </a></li> 
-            <li><a>
-                <div class="dropdown">
-                        <a class="dropbtn" mat-list-item >Laboratorios</a>
-                        <div class="dropdown-content">
-                          <a >Salon 1</a>
-                          <a href="#">Salon 1</a>
-                          <a href="#">Salon 1</a>
-                          <a href="#">Salon 1</a>
-                        </div>
-                      </div>
-            </a></li>
-            <li><a>
-                <div class="dropdown">
-                        <a class="dropbtn" mat-list-item >Oficinas</a>
-                        <div class="dropdown-content">
-                          <a >Salon 1</a>
-                          <a href="#">Salon 1</a>
-                          <a href="#">Salon 1</a>
-                          <a href="#">Salon 1</a>
-                        </div>
-                      </div>
-            </a></li>
-            <li><a>
-                <div class="dropdown">
-                        <a class="dropbtn" mat-list-item >Baños</a>
-                        <div class="dropdown-content">
-                          <a >Salon 1</a>
-                          <a href="#">Salon 1</a>
-                          <a href="#">Salon 1</a>
-                          <a href="#">Salon 1</a>
-                        </div>
-                      </div>
-            </a></li>
-          </ul>
-        </nav>
-        
-</div>
--->
-<div pinch-zoom [double-tap]="true">
-  <img src='/Imagenes/bloque_21_piso_1.jpg'  style="width:100%;">
-</div>
+  -->
+  <div pinch-zoom [double-tap]="true">
+    <img src='/Imagenes/bloque_21_piso_1.jpg'  style="width:100%;">
+  </div>
