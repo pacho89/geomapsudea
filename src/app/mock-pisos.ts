@@ -103,7 +103,7 @@ export const NIVELES: Nivel[]=[
 { nivel: 21,
   descripcion:'21-214',
   url:'/Imagenes/Bloque20Salones2piso.JPG',
-  tipo :0,
+  tipo :3,
   resumen:' Corredor donde se encuentran los salones pertenecientes al bloque 21' },
 
 
