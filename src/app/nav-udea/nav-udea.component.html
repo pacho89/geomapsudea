@@ -112,7 +112,9 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
-    <mat-toolbar color="Foreground">Geo Maps UdeA</mat-toolbar>
+    <mat-toolbar color="Foreground"  > Universidad de Antioquia</mat-toolbar>
+    
+
     <mat-nav-list>
         <div class="dropdown">
             <a class="dropbtn" (click)="open(content)" mat-list-item >Bloque 20</a>
@@ -203,7 +205,12 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      
+
+      <div >
+        <img class="Escudo" src="./imagenes/udea.jpg" >
+      </div>
+      <mat-toolbar color="Foreground" class="encabezado"> Geo Maps Udea</mat-toolbar>
+    
     </mat-toolbar>
 
 
