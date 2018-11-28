@@ -113,6 +113,40 @@
       <a (click)="open3(content3)" mat-list-item >Georeferencia</a>
 
 
+
+      <div class="form-group">
+        <form >
+            <button ><i class="fa fa-search"></i></button>
+          <input    [(ngModel)]="searchText" placeholder="Geo Maps UdeA" name="Busqueda" (keyup)="showSearchResults($event)">
+          
+        <ul  *ngFor="let item of niveles"  class="lista2" >
+              <li *ngIf="searching === true &&  item.descripcion == searchText" a >
+                <a (click)="open4(content4)" mat-list-item >{{ item.descripcion }}</a>
+
+                <ng-template #content4 let-modal>
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="modal-basic-title">Resultado</h4>
+                      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">                             
+                          <div class="input-group">
+                            <img src={{item.url}}  style="width: 100%; height:100%">                            
+                          </div>
+                          <label for="dateOfBirth">{{item.resumen}}</label>
+                        </div>
+                      </form>
+                    </div>
+                  </ng-template>
+
+              </li>
+           </ul>
+        </form>
+      </div>
+
      
 
     </mat-nav-list>
