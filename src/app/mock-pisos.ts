@@ -122,7 +122,7 @@ export const NIVELES: Nivel[]=[
         resumen:'Grupos de Investigación, BAMR Tel(219)8551, Cuarto piso Bloque 20'},
        { nivel:201,
         descripcion:'20-113',
-        url:'asasasss',
+        url:'laboratorio201.JPG',
         tipo :2 ,
         resumen:'Grupos de Investigación, TESLA Tel(219)5559,Primer piso Bloque 20'},
        
