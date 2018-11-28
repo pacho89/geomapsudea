@@ -92,6 +92,13 @@ export class NavUdeaComponent {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
   }
+  open5(content5:any) {
+    this.modalService.open(content5, {ariaLabelledBy: 'modal-basic-title5'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
 
 
   private getDismissReason(reason: any): string {
