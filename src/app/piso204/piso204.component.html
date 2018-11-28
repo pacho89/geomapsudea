@@ -20,7 +20,7 @@
                     <a  (click)="open(content)">{{item.descripcion}}</a>
                     <ng-template #content let-modal>
                         <div class="modal-header">
-                          <h4 class="modal-title" id="modal-basic-title">Aulas del 203 al 236</h4>
+                          <h4 class="modal-title" id="modal-basic-title">{{item.descripcion}}</h4>
                           <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -31,7 +31,7 @@
                               <div class="input-group">
                                 <img src={{item.url}}  style="width: 100%; height:100%">                            
                               </div>
-                              <label for="dateOfBirth">Corredor correspondiente al segundo piso del bloque 21 donde se encuentran las aulas de clase.</label>
+                              <label for="dateOfBirth">{{item.resumen}}</label>
                             </div>
                           </form>
                         </div>
@@ -61,7 +61,7 @@
                       <a  (click)="open(content)">{{item.descripcion}}</a>
                       <ng-template #content let-modal>
                           <div class="modal-header">
-                            <h4 class="modal-title" id="modal-basic-title">Aulas del 203 al 236</h4>
+                            <h4 class="modal-title" id="modal-basic-title">{{item.descripcion}}</h4>
                             <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                               <span aria-hidden="true">&times;</span>
                             </button>
@@ -72,7 +72,7 @@
                                 <div class="input-group">
                                   <img src={{item.url}}  style="width: 100%; height:100%">                            
                                 </div>
-                                <label for="dateOfBirth">Corredor correspondiente al segundo piso del bloque 21 donde se encuentran las aulas de clase.</label>
+                                <label for="dateOfBirth">{{item.resumen}}</label>
                               </div>
                             </form>
                           </div>
@@ -99,7 +99,7 @@
                       <a  (click)="open(content)">{{item.descripcion}}</a>
                       <ng-template #content let-modal>
                           <div class="modal-header">
-                            <h4 class="modal-title" id="modal-basic-title">Aulas del 203 al 236</h4>
+                            <h4 class="modal-title" id="modal-basic-title">{{item.descripcion}}</h4>
                             <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                               <span aria-hidden="true">&times;</span>
                             </button>
@@ -110,7 +110,7 @@
                                 <div class="input-group">
                                   <img src={{item.url}}  style="width: 100%; height:100%">                            
                                 </div>
-                                <label for="dateOfBirth">Corredor correspondiente al segundo piso del bloque 21 donde se encuentran las aulas de clase.</label>
+                                <label for="dateOfBirth">{{item.resumen}}</label>
                               </div>
                             </form>
                           </div>
@@ -136,7 +136,7 @@
                       <a  (click)="open(content)">{{item.descripcion}}</a>
                       <ng-template #content let-modal>
                           <div class="modal-header">
-                            <h4 class="modal-title" id="modal-basic-title">Aulas del 203 al 236</h4>
+                            <h4 class="modal-title" id="modal-basic-title">{{item.descripcion}}</h4>
                             <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                               <span aria-hidden="true">&times;</span>
                             </button>
@@ -147,7 +147,7 @@
                                 <div class="input-group">
                                   <img src={{item.url}}  style="width: 100%; height:100%">                            
                                 </div>
-                                <label for="dateOfBirth">Corredor correspondiente al segundo piso del bloque 21 donde se encuentran las aulas de clase.</label>
+                                <label for="dateOfBirth">{{item.resumen}}</label>
                               </div>
                             </form>
                           </div>

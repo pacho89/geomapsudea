@@ -1,11 +1,39 @@
 import { Nivel } from './nivel';
 
 export const NIVELES: Nivel[]=[
-    { nivel: 212,
-        descripcion:'21-232',
+    { nivel: 201,
+        descripcion:'NN',
         url:'asasasss',
         tipo :0 ,
-        resumen:'Salon en el corredor del bloque 21 segundo piso' },
+        resumen:'ESTE PISO NO CUENTA CON AULAS DE CLASE' },
+
+     { nivel: 211,
+        descripcion:'NN',
+        url:'asasasss',
+        tipo :0 ,
+        resumen:'ESTE PISO NO CUENTA CON AULAS DE CLASE' },
+    
+     { nivel: 211,
+        descripcion:'NN',
+        url:'asasasss',
+        tipo :1 ,
+        resumen:'ESTE PISO NO CUENTA CON LABORATORIOS' },
+
+     { nivel: 212,
+        descripcion:'NN',
+        url:'asasasss',
+        tipo :1 ,
+        resumen:'ESTE PISO NO CUENTA CON LABORATORIOS' },
+
+     { nivel: 212,
+        descripcion:'NN',
+        url:'asasasss',
+        tipo :2 ,
+        resumen:'ESTE PISO NO CUENTA CON OFICINAS' },
+
+   
+
+   
        
        { nivel: 214,
         descripcion:'21-432',
