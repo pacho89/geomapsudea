@@ -1,3 +1,9 @@
+.prueba{
+  border-radius: 15px;
+  text-align: center;
+}
+
+
 .lista2 {
 	counter-reset: li; 
 	list-style: none; 
@@ -98,11 +104,15 @@ agm-map {
     color: black;
     font-size: 16px;
     border: none;
+    border-radius: 15px;
 }
 
 .dropdown {
     position: relative;
     display: block;
+    border-radius: 15px;
+    
+
 }
 
 .dropdown-content {
@@ -112,6 +122,7 @@ agm-map {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 15px;
 }
 
 .dropdown-content a {
@@ -119,13 +130,24 @@ agm-map {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-radius: 15px;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color:  #44da44;
 
-.dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #f5f8f5;}
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #14c714;
+
+}
 
 body {
   margin: 0;
@@ -159,7 +181,8 @@ body {
 
 .topnav .search-container {
   float: left;
-  margin-left: 16px
+  margin-left: 16px;
+  border-radius: 15px;
 }
 
 .topnav input[type=text] {
@@ -175,7 +198,7 @@ body {
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  
+  border-radius: 15px;
   background: #ddd;
   font-size: 8px;
   border: none;
@@ -184,11 +207,13 @@ body {
 
 .topnav .search-container button:hover {
   background: #ccc;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {
     float: none;
+    border-radius: 15px;
   }
   .topnav a, .topnav input[type=text], .topnav .search-container button {
     float: none;
@@ -197,8 +222,10 @@ body {
     width: 100%;
     margin: 0;
     padding: 14px;
+    border-radius: 15px;
   }
   .topnav input[type=text] {
     border: 1px solid #ccc;  
+    border-radius: 15px;
   }
 }
