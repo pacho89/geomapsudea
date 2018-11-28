@@ -13,7 +13,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             
             
-            <div class="dropdown-divider"></div>
+            
             <ul class="lista2"  *ngFor="let item of niveles">
                 <li *ngIf="item.nivel == 21 && item.tipo == 0  " >
                     
@@ -54,10 +54,10 @@
             Laboratorios
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="dropdown-divider"></div>
-              <ul class="heroes"  *ngFor="let item of niveles">
+              
+              <ul class="lista2"  *ngFor="let item of niveles">
                   <li *ngIf="item.nivel == 21 && item.tipo == 1   " >
-                      <div class="dropdown-divider"></div>
+                      
                       <a  (click)="open(content)">{{item.descripcion}}</a>
                       <ng-template #content let-modal>
                           <div class="modal-header">
@@ -92,10 +92,10 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           
-              <div class="dropdown-divider"></div>
-              <ul class="heroes"  *ngFor="let item of niveles">
+              
+              <ul class="lista2"  *ngFor="let item of niveles">
                   <li *ngIf="item.nivel == 21 && item.tipo == 2    " >
-                      <div class="dropdown-divider"></div>
+                      
                       <a  (click)="open(content)">{{item.descripcion}}</a>
                       <ng-template #content let-modal>
                           <div class="modal-header">
@@ -129,10 +129,10 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
 
-              <div class="dropdown-divider"></div>
-              <ul class="heroes"  *ngFor="let item of niveles">
+              
+              <ul class="lista2"  *ngFor="let item of niveles">
                   <li *ngIf="item.nivel == 21 && item.tipo == 3   " >
-                      <div class="dropdown-divider"></div>
+                      
                       <a  (click)="open(content)">{{item.descripcion}}</a>
                       <ng-template #content let-modal>
                           <div class="modal-header">
